@@ -30,6 +30,8 @@ This commands includes
 • Other IP Commands e.g. show ip route etc.
 <BR>
 ##program
+
+
 Ping command
 
 ```
@@ -46,7 +48,8 @@ while True:
         c.send(str(ping(hostname, verbose=False)).encode()) 
     except KeyError: 
         c.send("Not Found".encode())
-Server
+
+Server:
 import socket 
 s=socket.socket() 
 s.connect(('localhost',8000)) 
@@ -54,7 +57,8 @@ while True:
     ip=input("Enter the website you want to ping ") 
     s.send(ip.encode()) 
     print(s.recv(1024).decode())
-Tranceroute command
+
+Tranceroute command:
 from scapy.all import* 
 target = ["www.google.com"] 
 result, unans = traceroute(target,maxttl=32) 
@@ -70,6 +74,12 @@ client:
 server:
 
 ![image](https://github.com/shalini170/4.Execution_of_NetworkCommends/assets/151901983/1ddfa39f-cdca-4e31-9306-4a089eb704cc)
+
+Tranceroute command:
+
+![Screenshot 2024-05-20 183315](https://github.com/shalini170/4.Execution_of_NetworkCommends/assets/151901983/83398881-49d6-49f1-b450-f477b1ff9d56)
+
+
 
 
 ## Result
